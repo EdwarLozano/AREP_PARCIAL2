@@ -13,9 +13,6 @@ public class Collatz {
     public static void main(String... args){
         staticFiles.location("/public");
         port(getPort());
-        get("/cliente", (req, res) -> {
-            return Formulario();
-        });
 
         get("collatzsequence", (req,res) -> {
             String value = req.queryParams("value");
@@ -31,28 +28,6 @@ public class Collatz {
                     "}";
         });
 
-    }
-
-    private static String Formulario() {
-        return "<html>" +
-                "<head>" +
-                "<title>Collatz</title>" +
-                "</head>" +
-                "<body>" +
-                "<form method=\"post\">" +
-                "<label for=\"value\">Number: </label>"+
-                "<input type=\"text\" name=\"value\" id=\"value\">" +
-                "</div>" +
-                "<br>" +
-                "<input type=\"button\" value=\"Calcular\" onclick=\"getCollatz()\">\n" +
-                "</form>" +
-                "<script>" +
-                "function getCollatz() {\n" +
-                "let valorIngresado = document.getElementById(\"value\").value;\n" +
-                "collatzSequence(valorIngresado)"+
-                "</script>" +
-                "</body>" +
-                "</html>";
     }
 
 
