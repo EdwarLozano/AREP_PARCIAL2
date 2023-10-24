@@ -4,7 +4,7 @@
 **Profesor:** Luis Daniel Benavides
 
 ## Como funciona
-1. Primero se debe clonar el repositorio: https://github.com/EdwarLozano/AREP_PARCIAL2.git
+1. Primero se debe clonar el repositorio: https://github.com/EdwarLozano/ParcialEdwarLozano.git
 2. Luego se debe realizar el siguiente comando en la carpeta raíz
 ```
     mvn clean install
@@ -46,5 +46,9 @@ Accediendo a:  http://ec2-35-175-206-104.compute-1.amazonaws.com:42000/index.htm
 Ejemplo de llamado desde URL en aws: http://ec2-35-175-206-104.compute-1.amazonaws.com:42000/collatzsequence?value=9801
 ![img_5.png](img_5.png)
 
-## Video
 
+## Nota
+En la carpeta llave se encuentra la llave de la instancia
+
+## Video
+Se puede acceder en: https://drive.google.com/file/d/11IjRF1XPIhjnH6Wr3sPNvZQZFrdHFSnN/view?usp=sharing
